@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8" /><title>MTP Helper</title></head><body>
+<div id="platform" ></div>
+<div id="executable" ></div>
+<form onsubmit="request(); return false;">
+  <input id="command" type="text" size="40"/>
+</form>
+<div id="result" ></div>
+<script>
+const MTP = require(__dirname + "/mtphelper.js");
+MTP.executable = __dirname + ((process.platform=="win32")? "/../MtpHelper/bin/Debug/mtphelper.exe": "/../MtpHelper/Debug/MtpHelper");
+MTP.start(require("queue"));
+document.getElementById("platform").innerHTML = MTP.platform;
+document.getElementById("executable").innerHTML = MTP.executable;
+
+function request() {
+  var command = document.getElementById("command").value;
+  MTP.request(command).then((data)=> {
+    document.getElementById("result").innerHTML = JSON.stringify(data);
+  });
+}
+</script>
+</body></html>

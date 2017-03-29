@@ -1,0 +1,16 @@
+{
+  "description": "MTP Access helper for OSX",
+  "repository": "https://github.com/ricohr/osx-mtphelper.git",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha test --recursive"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "mktmpdir": "^0.1.1",
+    "mocha": "^3.2.0",
+    "queue": "^4.0.0",
+    "temp": "^0.8.3"
+  }
+}

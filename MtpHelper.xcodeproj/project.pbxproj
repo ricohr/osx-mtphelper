@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2209C6B11D74FEF000772ED8 /* NSError+MtpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2209C6B01D74FEF000772ED8 /* NSError+MtpExtension.m */; };
+		22283F1A1D769F8100314145 /* NSDictionary+MtpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22283F191D769F8100314145 /* NSDictionary+MtpExtension.m */; };
+		2270E7351D73ADDA00DAA8D8 /* basictypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2270E7231D73ADDA00DAA8D8 /* basictypes.cpp */; };
+		2270E7361D73ADDA00DAA8D8 /* bytestream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2270E7251D73ADDA00DAA8D8 /* bytestream.cpp */; };
+		2270E7371D73ADDA00DAA8D8 /* int128_t.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2270E7291D73ADDA00DAA8D8 /* int128_t.cpp */; };
+		2270E7421D73AE0200DAA8D8 /* PTPProtocolHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2270E7411D73AE0200DAA8D8 /* PTPProtocolHelpers.m */; settings = {COMPILER_FLAGS = "-Wno-unused-function"; }; };
+		2276CE401D6FDB33000877CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2276CE3F1D6FDB33000877CA /* main.m */; };
+		2276CE461D6FDBBE000877CA /* MtpHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2276CE3C1D6FDB32000877CA /* MtpHelper */; };
+		2276CE491D6FDC2C000877CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2276CE481D6FDC2C000877CA /* Foundation.framework */; };
+		2276CE4B1D6FDC3B000877CA /* ImageCaptureCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2276CE4A1D6FDC3B000877CA /* ImageCaptureCore.framework */; };
+		2276CE4E1D6FE679000877CA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2276CE4D1D6FE679000877CA /* Cocoa.framework */; };
+		2276CE541D6FF646000877CA /* MtpDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2276CE531D6FF646000877CA /* MtpDeviceController.m */; };
+		2276CE5B1D70137C000877CA /* MtpCommandProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2276CE5A1D70137C000877CA /* MtpCommandProcessor.m */; };
+		22A9BE701D73C78A00E5FDBD /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A9BE6F1D73C78A00E5FDBD /* libiconv.tbd */; };
+		22A9BE731D73CA3700E5FDBD /* NSMutableDictionary+MtpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A9BE721D73CA3700E5FDBD /* NSMutableDictionary+MtpExtension.m */; };
+		22A9BE761D74089800E5FDBD /* NSData+MtpExtension.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22A9BE751D74089800E5FDBD /* NSData+MtpExtension.mm */; };
+		22A9BE791D7408AB00E5FDBD /* NSString+MtpExtension.mm in Sources */ = {isa = PBXBuildFile; fileRef = 22A9BE781D7408AB00E5FDBD /* NSString+MtpExtension.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2276CE3A1D6FDB32000877CA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "$(SRCROOT)/$(PROJECT)/$(CONFIGURATION)";
+			dstSubfolderSpec = 0;
+			files = (
+				2276CE461D6FDBBE000877CA /* MtpHelper in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2209C6AF1D74FEF000772ED8 /* NSError+MtpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+MtpExtension.h"; sourceTree = "<group>"; };
+		2209C6B01D74FEF000772ED8 /* NSError+MtpExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+MtpExtension.m"; sourceTree = "<group>"; };
+		22283F181D769F8100314145 /* NSDictionary+MtpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MtpExtension.h"; sourceTree = "<group>"; };
+		22283F191D769F8100314145 /* NSDictionary+MtpExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MtpExtension.m"; sourceTree = "<group>"; };
+		2270E7231D73ADDA00DAA8D8 /* basictypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = basictypes.cpp; path = libptpip/basictypes.cpp; sourceTree = "<group>"; };
+		2270E7241D73ADDA00DAA8D8 /* basictypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = basictypes.h; path = libptpip/basictypes.h; sourceTree = "<group>"; };
+		2270E7251D73ADDA00DAA8D8 /* bytestream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = bytestream.cpp; path = libptpip/bytestream.cpp; sourceTree = "<group>"; };
+		2270E7261D73ADDA00DAA8D8 /* bytestream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bytestream.h; path = libptpip/bytestream.h; sourceTree = "<group>"; };
+		2270E7291D73ADDA00DAA8D8 /* int128_t.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = int128_t.cpp; path = libptpip/int128_t.cpp; sourceTree = "<group>"; };
+		2270E72A1D73ADDA00DAA8D8 /* int128_t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = int128_t.h; path = libptpip/int128_t.h; sourceTree = "<group>"; };
+		2270E73F1D73AE0200DAA8D8 /* PTPEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTPEnums.h; path = ptp/PTPEnums.h; sourceTree = "<group>"; };
+		2270E7401D73AE0200DAA8D8 /* PTPProtocolHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTPProtocolHelpers.h; path = ptp/PTPProtocolHelpers.h; sourceTree = "<group>"; };
+		2270E7411D73AE0200DAA8D8 /* PTPProtocolHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTPProtocolHelpers.m; path = ptp/PTPProtocolHelpers.m; sourceTree = "<group>"; };
+		2276CE3C1D6FDB32000877CA /* MtpHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MtpHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		2276CE3F1D6FDB33000877CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2276CE481D6FDC2C000877CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2276CE4A1D6FDC3B000877CA /* ImageCaptureCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageCaptureCore.framework; path = System/Library/Frameworks/ImageCaptureCore.framework; sourceTree = SDKROOT; };
+		2276CE4D1D6FE679000877CA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2276CE521D6FF646000877CA /* MtpDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtpDeviceController.h; sourceTree = "<group>"; };
+		2276CE531D6FF646000877CA /* MtpDeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MtpDeviceController.m; sourceTree = "<group>"; };
+		2276CE591D70137C000877CA /* MtpCommandProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtpCommandProcessor.h; sourceTree = "<group>"; };
+		2276CE5A1D70137C000877CA /* MtpCommandProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MtpCommandProcessor.m; sourceTree = "<group>"; };
+		22A9BE6F1D73C78A00E5FDBD /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		22A9BE711D73CA3700E5FDBD /* NSMutableDictionary+MtpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+MtpExtension.h"; sourceTree = "<group>"; };
+		22A9BE721D73CA3700E5FDBD /* NSMutableDictionary+MtpExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MtpExtension.m"; sourceTree = "<group>"; };
+		22A9BE741D74089800E5FDBD /* NSData+MtpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MtpExtension.h"; sourceTree = "<group>"; };
+		22A9BE751D74089800E5FDBD /* NSData+MtpExtension.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSData+MtpExtension.mm"; sourceTree = "<group>"; };
+		22A9BE771D7408AB00E5FDBD /* NSString+MtpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MtpExtension.h"; sourceTree = "<group>"; };
+		22A9BE781D7408AB00E5FDBD /* NSString+MtpExtension.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSString+MtpExtension.mm"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2276CE391D6FDB32000877CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2276CE4E1D6FE679000877CA /* Cocoa.framework in Frameworks */,
+				2276CE491D6FDC2C000877CA /* Foundation.framework in Frameworks */,
+				2276CE4B1D6FDC3B000877CA /* ImageCaptureCore.framework in Frameworks */,
+				22A9BE701D73C78A00E5FDBD /* libiconv.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		223228EA1D89116B00AC137D /* MtpExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				2209C6AF1D74FEF000772ED8 /* NSError+MtpExtension.h */,
+				2209C6B01D74FEF000772ED8 /* NSError+MtpExtension.m */,
+				22283F181D769F8100314145 /* NSDictionary+MtpExtension.h */,
+				22283F191D769F8100314145 /* NSDictionary+MtpExtension.m */,
+				22A9BE711D73CA3700E5FDBD /* NSMutableDictionary+MtpExtension.h */,
+				22A9BE721D73CA3700E5FDBD /* NSMutableDictionary+MtpExtension.m */,
+				22A9BE771D7408AB00E5FDBD /* NSString+MtpExtension.h */,
+				22A9BE781D7408AB00E5FDBD /* NSString+MtpExtension.mm */,
+				22A9BE741D74089800E5FDBD /* NSData+MtpExtension.h */,
+				22A9BE751D74089800E5FDBD /* NSData+MtpExtension.mm */,
+			);
+			name = MtpExtensions;
+			sourceTree = "<group>";
+		};
+		2270E7221D73ADCC00DAA8D8 /* libptpip */ = {
+			isa = PBXGroup;
+			children = (
+				2270E7241D73ADDA00DAA8D8 /* basictypes.h */,
+				2270E7231D73ADDA00DAA8D8 /* basictypes.cpp */,
+				2270E7261D73ADDA00DAA8D8 /* bytestream.h */,
+				2270E7251D73ADDA00DAA8D8 /* bytestream.cpp */,
+				2270E72A1D73ADDA00DAA8D8 /* int128_t.h */,
+				2270E7291D73ADDA00DAA8D8 /* int128_t.cpp */,
+			);
+			name = libptpip;
+			sourceTree = "<group>";
+		};
+		2270E73E1D73ADF900DAA8D8 /* ptp */ = {
+			isa = PBXGroup;
+			children = (
+				2270E73F1D73AE0200DAA8D8 /* PTPEnums.h */,
+				2270E7401D73AE0200DAA8D8 /* PTPProtocolHelpers.h */,
+				2270E7411D73AE0200DAA8D8 /* PTPProtocolHelpers.m */,
+			);
+			name = ptp;
+			sourceTree = "<group>";
+		};
+		2276CE331D6FDB32000877CA = {
+			isa = PBXGroup;
+			children = (
+				2276CE471D6FDBFF000877CA /* Frameworks */,
+				2276CE3E1D6FDB32000877CA /* MtpHelper */,
+				2276CE3D1D6FDB32000877CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2276CE3D1D6FDB32000877CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2276CE3C1D6FDB32000877CA /* MtpHelper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2276CE3E1D6FDB32000877CA /* MtpHelper */ = {
+			isa = PBXGroup;
+			children = (
+				2270E73E1D73ADF900DAA8D8 /* ptp */,
+				2270E7221D73ADCC00DAA8D8 /* libptpip */,
+				223228EA1D89116B00AC137D /* MtpExtensions */,
+				2276CE521D6FF646000877CA /* MtpDeviceController.h */,
+				2276CE531D6FF646000877CA /* MtpDeviceController.m */,
+				2276CE591D70137C000877CA /* MtpCommandProcessor.h */,
+				2276CE5A1D70137C000877CA /* MtpCommandProcessor.m */,
+				2276CE3F1D6FDB33000877CA /* main.m */,
+			);
+			path = MtpHelper;
+			sourceTree = "<group>";
+		};
+		2276CE471D6FDBFF000877CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2276CE4D1D6FE679000877CA /* Cocoa.framework */,
+				2276CE4A1D6FDC3B000877CA /* ImageCaptureCore.framework */,
+				2276CE481D6FDC2C000877CA /* Foundation.framework */,
+				22A9BE6F1D73C78A00E5FDBD /* libiconv.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2276CE3B1D6FDB32000877CA /* MtpHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2276CE431D6FDB33000877CA /* Build configuration list for PBXNativeTarget "MtpHelper" */;
+			buildPhases = (
+				2276CE381D6FDB32000877CA /* Sources */,
+				2276CE391D6FDB32000877CA /* Frameworks */,
+				2276CE3A1D6FDB32000877CA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MtpHelper;
+			productName = MtpHelper;
+			productReference = 2276CE3C1D6FDB32000877CA /* MtpHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2276CE341D6FDB32000877CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Toshiyuki Terashita";
+				TargetAttributes = {
+					2276CE3B1D6FDB32000877CA = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 2276CE371D6FDB32000877CA /* Build configuration list for PBXProject "MtpHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2276CE331D6FDB32000877CA;
+			productRefGroup = 2276CE3D1D6FDB32000877CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2276CE3B1D6FDB32000877CA /* MtpHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2276CE381D6FDB32000877CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22283F1A1D769F8100314145 /* NSDictionary+MtpExtension.m in Sources */,
+				22A9BE761D74089800E5FDBD /* NSData+MtpExtension.mm in Sources */,
+				2270E7351D73ADDA00DAA8D8 /* basictypes.cpp in Sources */,
+				2270E7361D73ADDA00DAA8D8 /* bytestream.cpp in Sources */,
+				2270E7371D73ADDA00DAA8D8 /* int128_t.cpp in Sources */,
+				2270E7421D73AE0200DAA8D8 /* PTPProtocolHelpers.m in Sources */,
+				2276CE541D6FF646000877CA /* MtpDeviceController.m in Sources */,
+				22A9BE791D7408AB00E5FDBD /* NSString+MtpExtension.mm in Sources */,
+				2276CE5B1D70137C000877CA /* MtpCommandProcessor.m in Sources */,
+				2276CE401D6FDB33000877CA /* main.m in Sources */,
+				2209C6B11D74FEF000772ED8 /* NSError+MtpExtension.m in Sources */,
+				22A9BE731D73CA3700E5FDBD /* NSMutableDictionary+MtpExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2276CE411D6FDB33000877CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2276CE421D6FDB33000877CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2276CE441D6FDB33000877CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2276CE451D6FDB33000877CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2276CE371D6FDB32000877CA /* Build configuration list for PBXProject "MtpHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2276CE411D6FDB33000877CA /* Debug */,
+				2276CE421D6FDB33000877CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2276CE431D6FDB33000877CA /* Build configuration list for PBXNativeTarget "MtpHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2276CE441D6FDB33000877CA /* Debug */,
+				2276CE451D6FDB33000877CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2276CE341D6FDB32000877CA /* Project object */;
+}
