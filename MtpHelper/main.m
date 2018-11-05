@@ -45,6 +45,7 @@ static const char VERSION[] = "1.0.0.0 2017.03.29";
         _commandProcessor = [MtpCommandProcessor processorWithDeviceController:_deviceController];
         _interfaceQueue = [NSOperationQueue new];
         self.interfaceQueue.maxConcurrentOperationCount = 1;
+        self.interfaceQueue.underlyingQueue = dispatch_queue_create("interfaceQueue", DISPATCH_QUEUE_SERIAL);
     }
     return self;
 }

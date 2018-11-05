@@ -502,4 +502,45 @@ const NSTimeInterval kMtpDeviceCtl_timedOutForSendConfig = 20; // in sec.
     [self notifyDeviceEvent:camera eventName:[NSString stringWithMtpEventCode:event.eventCode] params:arr];
 }
 
+
+- (void)cameraDevice:(nonnull ICCameraDevice *)camera didAddItem:(nonnull ICCameraItem *)item
+{
+}
+
+
+- (void)cameraDevice:(nonnull ICCameraDevice *)scanner didCompleteDeleteFilesWithError:(nullable NSError *)error
+{
+}
+
+
+- (void)cameraDevice:(nonnull ICCameraDevice *)camera didReceiveMetadataForItem:(nonnull ICCameraItem *)item
+{
+}
+
+
+- (void)cameraDevice:(nonnull ICCameraDevice *)camera didReceiveThumbnailForItem:(nonnull ICCameraItem *)item
+{
+}
+
+
+- (void)cameraDevice:(nonnull ICCameraDevice *)camera didRemoveItem:(nonnull ICCameraItem *)item
+{
+}
+
+
+- (void)cameraDevice:(nonnull ICCameraDevice *)camera didRenameItems:(nonnull NSArray<ICCameraItem *> *)items
+{
+}
+
+
+- (void)cameraDeviceDidChangeCapability:(nonnull ICCameraDevice *)camera
+{
+}
+
+
+- (void)deviceDidBecomeReadyWithCompleteContentCatalog:(nonnull ICDevice *)device
+{
+}
+
+
 @end

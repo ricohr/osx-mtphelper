@@ -440,7 +440,7 @@ describe('MtpHelper', ()=>{
       it('return status=OK when succeeded', ()=>{
         return expect(new Promise((resolve, reject)=>{
           Temp.open('json', (err, info)=>{
-            FS.write(info.fd, '{"foo":"bar"}');
+            FS.writeSync(info.fd, '{"foo":"bar"}');
             FS.close(info.fd, (err)=>{
               const device = new MTP.Device(TargetDeviceId);
               device.sendConfigObject(info.path).then((result)=>{
@@ -563,5 +563,9 @@ describe('MtpHelper', ()=>{
         return expect(execUpdate('dk1_vA00', ' ')).eventually.to.have.property('status', 'Invalid file name');
       });
     });
+  });
+
+  after(()=>{
+    MTP.stop();
   });
 });
