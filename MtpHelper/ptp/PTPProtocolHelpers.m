@@ -202,11 +202,6 @@ PTPWriteUnsignedLongLong( unsigned char** buf, unsigned long long value )
     //[super dealloc];
 }
 
-- (void)finalize
-{
-    free( mParameters );
-    [super finalize];
-}
 @end
 
 //------------------------------------------------------------------------------------------------------------------------------
@@ -334,11 +329,6 @@ PTPWriteUnsignedLongLong( unsigned char** buf, unsigned long long value )
     //[super dealloc];
 }
 
-- (void)finalize
-{
-    free( mParameters );
-    [super finalize];
-}
 @end
 
 //------------------------------------------------------------------------------------------------------------------------------
@@ -467,11 +457,6 @@ PTPWriteUnsignedLongLong( unsigned char** buf, unsigned long long value )
     //[super dealloc];
 }
 
-- (void)finalize
-{
-    free( mParameters );
-    [super finalize];
-}
 @end
 
 //------------------------------------------------------------------------------------------------------------------------------
