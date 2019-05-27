@@ -147,7 +147,7 @@ MtpHelper.json
 This is a config file that MtpHelper refers to.
 Place it in the same location as MtpHelper or specify it with ``-conf:JSON_FILENAME``.
 
-[MtpHelper.json](https://github.com/ricohr/ricoh-r-console/blob/master/lib/mtphelper/MtpHelper.json)
+Please see here for the specific content. [MtpHelper.json](https://github.com/ricohr/ricoh-r-console/blob/master/lib/mtphelper/MtpHelper.json)
 
 ### friendlyNames
 
