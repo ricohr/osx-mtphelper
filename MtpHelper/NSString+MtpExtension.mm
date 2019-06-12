@@ -48,7 +48,7 @@
     }
     
     NSNumber* num = [types objectForKey:self];
-    if (num) {
+    if (num != nil) {
         return [num unsignedShortValue];
     }
     if (error) {

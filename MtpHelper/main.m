@@ -32,6 +32,7 @@ static const char VERSION[] = "1.0.1.0 2018.11.06";
 @property (nonatomic, nonnull) NSArray<NSString*>* args;
 @property (nonatomic, nonnull, readonly) NSArray<NSString*>* friendlyNames;
 @property (nonatomic, nonnull, readonly) NSArray* supportedProperties;
+@property (nonatomic, strong) dispatch_queue_t underlyingQueue;
 
 @end
 
@@ -45,7 +46,8 @@ static const char VERSION[] = "1.0.1.0 2018.11.06";
         _commandProcessor = [MtpCommandProcessor processorWithDeviceController:_deviceController];
         _interfaceQueue = [NSOperationQueue new];
         self.interfaceQueue.maxConcurrentOperationCount = 1;
-        self.interfaceQueue.underlyingQueue = dispatch_queue_create("interfaceQueue", DISPATCH_QUEUE_SERIAL);
+        self.underlyingQueue = dispatch_queue_create("interfaceQueue", DISPATCH_QUEUE_SERIAL); // self.interfaceQueue.underlyingQueue is weak reference.
+        self.interfaceQueue.underlyingQueue = self.underlyingQueue;
     }
     return self;
 }
